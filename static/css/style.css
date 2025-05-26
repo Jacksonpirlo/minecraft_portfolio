@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
   
   html, body {
     height: 100%;
@@ -48,6 +54,13 @@
     text-shadow: 0 0 10px #000;
   }
 
+  main .img-portfolio {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    filter: drop-shadow(4px 4px 0 #444) drop-shadow(8px 8px 0 #222);
+  }
+
   section nav ul {
     display: flex;
     justify-content: space-between;
@@ -64,12 +77,33 @@
   section nav ul li button {
     padding: 10px;
     width: 50%;
+    background-color: #7c7c7c;
+    border-bottom: #000;
   }
 
-  section nav ul li button a {
+  section nav ul li a button {
     font-family: "VT323", monospace;
     font-weight: 400;
     font-style: normal;
-    color: #000000;
+    color: #ffffff;
+    font-size: 15px;
+  }
+
+  section nav .icons-social {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+  }
+
+  .icons-social li button {
+    width: 100%;
+  }
+
+  .icons-social li a {
+    color: #fff;
     text-decoration: none;
+  }
+
+  footer {
+    text-align: center;
   }
