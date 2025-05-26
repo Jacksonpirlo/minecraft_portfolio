@@ -104,6 +104,37 @@
     text-decoration: none;
   }
 
+
+  .icons-social li a img {
+    width: 20px;
+  }
   footer {
     text-align: center;
+    color: #fff;
   }
+
+  @media (min-width: 700px) {
+
+    main .img-portfolio {
+        position: relative;
+        top: -80px !important;
+        width: 100%;
+    }
+
+    section nav ul li button {
+        font-size: 25px !important;
+        padding: 15px;
+        cursor: pointer;
+        box-shadow: 10px 10px 60px 10px #000000;
+        border-bottom: 1px solid #000;
+    }
+
+    section nav ul li button:hover {
+        box-shadow: 10px 10px 60px 10px #000000;
+        background-color: #474747;
+    }
+
+    main {
+        padding: 10em;
+    }
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+body {
+    background-image: url(../img/tierra.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.projects h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.projects img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+table {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 2px solid #fff;
+    box-shadow: 10px 10px 60px 10px #000000;
+    margin-bottom: 40px;
+}
+
+table th {
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+}
+
+table td {
+    margin: 10px;
+    border: 1px solid #bbb;
+}
+
+table td a {
+    color: rgb(153, 153, 153);
+}
+
+@media (min-width: 700px) {
+
+    .projects h1 {
+        font-size: 60px !important;
+        margin-bottom: 20px;
+    }
+    article a img {
+        width: 700px !important;
+    }
+
+    table {
+        font-size: 27px;
+        max-width: 900px;
+    }
+
+    bable .td_links td:hover {
+        box-shadow: 10px 10px 10px 10px #000;
+        transition: all 1s ease;
+    }
+}
