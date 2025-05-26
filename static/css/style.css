@@ -59,6 +59,29 @@
     display: block;
     padding: 20px;
     filter: drop-shadow(4px 4px 0 #444) drop-shadow(8px 8px 0 #222);
+    animation-name: rotating;
+    animation-duration: 30s;
+    animation-timing-function: initial;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rotating {
+    0% {
+        transform: rotateX(59deg);
+    }
+
+    50% {
+        transform: rotateY(20deg);
+    }
+
+    75% {
+        transform: rotateX(50deg);
+    }
+
+    100% {
+        transform: rotateX(59deg);
+    }
   }
 
   section nav ul {
