@@ -54,7 +54,7 @@
     text-shadow: 0 0 10px #000;
   }
 
-  main .img-portfolio {
+  main #img-portfolio {
     width: 100%;
     display: block;
     padding: 20px;
