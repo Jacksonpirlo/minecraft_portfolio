@@ -1,3 +1,7 @@
+/* This responsive design was created with mobile-first */
+
+/* Mobile version */
+
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +36,8 @@ html, body {
     flex-direction: column;
     text-align: center;
     padding: 20px;
+    justify-content: center !important;
+    align-items: center !important;
   }
 
   article h1 {
@@ -39,10 +45,8 @@ html, body {
   }
 
   figure .imgs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   figure .imgs img {
@@ -54,7 +58,53 @@ html, body {
     transition: all 1s ease;
   }
 
-@media (min-width: 700px) {
+  /* Tablet version */
+
+@media (min-width: 768px) {
+
+    article{
+        align-items: center;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    article h1 {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    article p {
+        font-size: 30px;
+        width: 600px;
+        margin-bottom: 20px;
+    }
+
+    figure {
+        width: 800px;
+    }
+
+    figure .imgs {
+      grid-template-columns: repeat(3, 1fr);
+      margin-left: 5em;
+    }
+
+    figure .imgs img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .imgs img:hover {
+        width: 80px;
+        height: 80px;
+        transition: all 1s ease;
+    }
+
+
+}
+
+/* Desktop version */
+
+@media (min-width: 1024px) {
 
     article{
         align-items: center;
@@ -73,6 +123,11 @@ html, body {
 
     figure {
         width: 800px;
+    }
+
+    figure .imgs {
+      grid-template-columns: repeat(5, 1fr);
+      margin-left: 0em;
     }
 
     figure .imgs img {
